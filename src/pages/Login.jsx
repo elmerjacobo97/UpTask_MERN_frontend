@@ -7,13 +7,11 @@ import { useAuth } from '../hooks';
 export const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate();
 
+    const navigate = useNavigate();
     const { setAuth } = useAuth();
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-
         e.preventDefault();
 
         const regex =
